@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.quyetdostudio.whoisengineer.ui.PlayFragment">
+
+    <Button
+        android:id="@+id/stop_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Game"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textColor="@color/yellow"
+        android:background="@drawable/custom_button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textColor="@color/white"
+        android:text="Quesion 1: The worst case time complexity of AVL tree is better in comparison to binary search tree for"
+        android:layout_below="@+id/stop_game_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/text_view_question"
+        android:orientation="vertical"
+        android:id="@+id/radioGroup">
+
+        <TextView
+            android:id="@+id/text_view_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_answer_textview"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:buttonTint="@color/white"
+            android:text="A. Search and Insert Operations" />
+
+        <TextView
+            android:id="@+id/text_view_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:background="@drawable/custom_answer_textview"
+            android:buttonTint="@color/white"
+            android:text="B. Search and Delete Operations" />
+
+        <TextView
+            android:id="@+id/text_view_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:background="@drawable/custom_answer_textview"
+            android:buttonTint="@color/white"
+            android:text="C. Insert and Delete Operations" />
+
+        <TextView
+            android:id="@+id/text_view_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:background="@drawable/custom_answer_textview"
+            android:buttonTint="@color/white"
+            android:text="D. Search, Insert and Delete Operations" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radioGroup"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            android:backgroundTint="@color/indigo"
+            app:borderWidth="0dp"
+            app:srcCompat="@drawable/ic_percent"
+            android:layout_alignTop="@+id/fab_question"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_question"
+            android:backgroundTint="@color/indigo"
+            app:borderWidth="0dp"
+            android:layout_alignTop="@+id/fab_chart"
+            android:layout_toLeftOf="@+id/fab_chart"
+            android:layout_toStartOf="@+id/fab_chart"
+            android:layout_marginRight="52dp"
+            android:layout_marginEnd="52dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_chart"
+            android:backgroundTint="@color/indigo"
+            app:borderWidth="0dp"
+            android:layout_marginRight="51dp"
+            android:layout_marginEnd="51dp"
+            android:layout_alignTop="@+id/fab_call"
+            android:layout_toLeftOf="@+id/fab_call"
+            android:layout_toStartOf="@+id/fab_call" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            android:backgroundTint="@color/indigo"
+            app:borderWidth="0dp"
+            app:srcCompat="@drawable/ic_phone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
